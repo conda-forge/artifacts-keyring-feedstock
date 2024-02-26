@@ -1,5 +1,5 @@
 {% set name = "artifacts-keyring" %}
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4a583549c34a3928500139f9b993a5bf4853438997f167b816bba45523b6d97e
+  sha256: 13b7c2906015a76ff7e57e061afca2090084b43dd27055f34918eb829f8c3870
 
 build:
   noarch: python
@@ -43,9 +43,7 @@ about:
     Both pip and twine will use keyring to find credentials.
   license: MIT
   license_family: MIT
-  license_file:
-    - LICENSE.txt
-    - src/artifacts_keyring/plugins/LICENSE
+  license_file: src/artifacts_keyring/plugins/LICENSE
   doc_url: https://github.com/microsoft/artifacts-keyring?tab=readme-ov-file#usage
   dev_url: https://github.com/microsoft/artifacts-keyring/
 
