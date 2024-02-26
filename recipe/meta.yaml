@@ -43,9 +43,7 @@ about:
     Both pip and twine will use keyring to find credentials.
   license: MIT
   license_family: MIT
-  license_file:
-    - LICENSE.txt
-    - src/artifacts_keyring/plugins/LICENSE
+  license_file: src/artifacts_keyring/plugins/LICENSE
   doc_url: https://github.com/microsoft/artifacts-keyring?tab=readme-ov-file#usage
   dev_url: https://github.com/microsoft/artifacts-keyring/
 
