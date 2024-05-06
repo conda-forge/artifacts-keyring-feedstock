@@ -1,13 +1,13 @@
 {% set name = "artifacts-keyring" %}
-{% set version = "0.3.4" %}
+{% set version = "0.3.5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 73cdbcbf3d23f22fa6cc8bffb6b3c2795d5fa6246a2646924513a5825031b4ed
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: e2c2b1f5e2c57bcfd3a9392e9e2a2e100d6aea8e59b388b960921fa4e8cc8598
 
 build:
   noarch: python
