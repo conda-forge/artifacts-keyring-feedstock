@@ -18,11 +18,12 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
+    - setuptools >=42
+    - setuptools-scm >=6.0
     - wheel
   run:
     - python >={{ python_min }}
-    - keyring >=16.0
+    - keyring >=22.0
     - requests >=2.20.0
 
 test:
